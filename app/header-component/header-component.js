@@ -19,6 +19,9 @@ System.register(['angular2/core'], function(exports_1) {
             HeaderComponent = (function () {
                 function HeaderComponent() {
                 }
+                HeaderComponent.prototype.onClick = function (value) {
+                    console.log(value);
+                };
                 HeaderComponent = __decorate([
                     core_1.Component({
                         templateUrl: './app/header-component/index.html',

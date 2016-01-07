@@ -5,4 +5,8 @@ import {Component} from 'angular2/core';
     selector: "header-component"
 })
 
-export class HeaderComponent{}
+export class HeaderComponent{
+	onClick(value){
+		console.log(value);
+	}
+}
