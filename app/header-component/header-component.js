@@ -22,11 +22,9 @@ System.register(['angular2/core', '../my-service'], function(exports_1) {
             HeaderComponent = (function () {
                 function HeaderComponent(myService) {
                     this.myService = myService;
-                    console.log(myService.stuff);
                 }
                 HeaderComponent.prototype.onClick = function (value) {
                     this.myService.stuff.push(value);
-                    console.log(this.myService.stuff);
                 };
                 HeaderComponent = __decorate([
                     core_1.Component({
