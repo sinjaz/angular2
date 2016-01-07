@@ -1,5 +1,9 @@
 <div class="list-component">
 	<ul>
-		<li *ngFor="#item of myService.stuff">{{item.title}}</li>
+		<li *ngFor="#item of myService.stuff"
+			[ngStyle]="{'font-weight': item.getFontWeight()}">
+			{{item.title}}
+			<button (click)="item.toggle()">X</button>
+		</li>
 	</ul>
 </div>

@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {MyService} from '../my-service';
+import {NgStyle} from 'angular2/common';
 
 @Component({
     templateUrl: './app/list-component/index.html',
