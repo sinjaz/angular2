@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {MyService} from '../my-service';
+import {AwesomeModel} from "../awesome-model";
 
 @Component({
     templateUrl: './app/header-component/index.html',
@@ -8,11 +9,15 @@ import {MyService} from '../my-service';
 
 export class HeaderComponent{
 
+	myModel:AwesomeModel = new AwesomeModel();
+
 	constructor(public myService:MyService){
 		
 	}
 
-	onClick(value){
-		this.myService.stuff.push(value);
+	onSubmit(){
+		this.myService.stuff.push(this.myModel);
+		console.log(this.myService.stuff);
+		this.myModel = new AwesomeModel();
 	}
 }

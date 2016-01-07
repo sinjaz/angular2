@@ -3,7 +3,6 @@
 html{
 	font-family: 'Lato', sans-serif;
 	font-weight: 100 !important;
-	text-align: center;
 }
 
 html, body{
@@ -12,9 +11,15 @@ html, body{
 }
 
 .header-component{
+	text-align: center;
 	background: black;
 	width: 100%;
 	display: block;
 	color: white;
 	padding: 20px;
+}
+
+.header-component form{
+	padding: 0;
+	margin: 10px;
 }

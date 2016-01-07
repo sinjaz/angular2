@@ -1,7 +1,12 @@
-@import {Injectable} from "angular2/core"
+@import {Injectable} from "angular2/core";
+@import {AwesomeModel} from "./awesome-model";
 
 @Injectable()
 
 export class MyService{
-	stuff = [1, 5, 8];
+	stuff = [
+		new AwesomeModel("Eat"),
+		new AwesomeModel("Sleep"),
+		new AwesomeModel("Code")
+	]
 }

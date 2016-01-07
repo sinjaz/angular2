@@ -1,5 +1,6 @@
 <div class="header-component">
 	<span>My very cool header bar</span>
-	<input #myInput/>
-	<button (click)="onClick(myInput.value)">Click Me!</button>
+	<form (submit)="onSubmit()">
+		<input type="text" placeholder="Add something" [(ngModel)]="myModel.title"/>
+	</form>
 </div>
